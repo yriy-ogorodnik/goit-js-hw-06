@@ -13,6 +13,9 @@ function handleSubmit(event) {
     return alert("всі поля повинні бути заповнені");
   }
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const formData = { email: email.value, password: password.value };
+
+  console.log(formData);
+
   event.currentTarget.reset();
 }
